@@ -30,4 +30,7 @@
 - **Engelska översättningar** — Lagen/regelverket gäller i svensk kontext, dokumentationen ska vara på svenska.
 
 ## Traceability
-<!-- Filled by roadmap -->
+- **Phase 1**: INFRA-01, INFRA-02, INFRA-03
+- **Phase 2**: MIG-01, MIG-03, PRES-01, PRES-02, PRES-03
+- **Phase 3**: MIG-02, PRES-04
+- **Phase 4**: INT-01
