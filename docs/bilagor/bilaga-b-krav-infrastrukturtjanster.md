@@ -6,6 +6,7 @@ artifact_id: "bilaga-b"
 artifact_type: "villkorsbilaga"
 version: "0.1"
 normative_status: "UTKAST"
+description: "Villkorsbilaga \u00b7 Status: UTKAST \u00b7 Version: 0.1"
 applies_to:
   - FED-OP
   - ANS-OP

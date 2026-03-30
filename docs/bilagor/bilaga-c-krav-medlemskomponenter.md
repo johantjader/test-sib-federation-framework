@@ -6,6 +6,7 @@ artifact_id: "bilaga-c"
 artifact_type: "villkorsbilaga"
 version: "0.1"
 normative_status: "UTKAST"
+description: "Villkorsbilaga \u00b7 Status: UTKAST \u00b7 Version: 0.1"
 applies_to:
   - FM-förbindelse
 ---

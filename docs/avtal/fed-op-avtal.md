@@ -6,6 +6,7 @@ artifact_id: "fed-op-avtal"
 artifact_type: "avtalsmall"
 version: "0.1"
 normative_status: "UTKAST"
+description: "Avtalsmall \u00b7 Status: UTKAST \u00b7 Version: 0.1"
 applies_to:
   - FED-OP
   - ANS-OP

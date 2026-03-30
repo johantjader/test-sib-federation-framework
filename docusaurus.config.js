@@ -65,13 +65,31 @@ const config = {
         items: [
           {
             type: 'docSidebar',
+            sidebarId: 'omSidebar',
+            position: 'left',
+            label: 'Om SIB',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'regelverkSidebar',
             position: 'left',
             label: 'Regelverk',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'guiderSidebar',
+            position: 'left',
+            label: 'Guider',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'omRegelverketSidebar',
+            position: 'left',
+            label: 'Om regelverket',
+          },
+          {
             href: 'https://www.digg.se/digitala-tjanster/samordnad-identitet-och-behorighet',
-            label: 'Om SIB (digg.se)',
+            label: 'digg.se',
             position: 'right',
           },
           {
