@@ -11,10 +11,9 @@ applies_to:
   - ANS-OP
   - FM-förbindelse
 ---
-:::info Normativ artefakt
-Denna artefakt är en **avtalsmall** i federationsplattformen.
-Status: **UTKAST**. Version: **0.1**.
-:::
+<div className="normative-metadata">
+<p><strong>Avtalsmall</strong> &middot; Status: <strong>UTKAST</strong> &middot; Version: <strong>0.1</strong></p>
+</div>
 
 # Avtalsmall FED-OP — Ledningsaktör och Federationsoperatör
 

@@ -1,6 +1,6 @@
 ---
 title: "Bilaga F — Federationsregler"
-sidebar_label: "Bilaga F"
+sidebar_label: "F. Federationsregler"
 sidebar_position: 6
 artifact_id: "bilaga-f"
 artifact_type: "villkorsbilaga"
@@ -9,10 +9,9 @@ normative_status: "UTKAST"
 applies_to:
   - FM-förbindelse
 ---
-:::info Normativ artefakt
-Denna artefakt är en **villkorsbilaga** i federationsplattformen.
-Status: **UTKAST**. Version: **0.1**.
-:::
+<div className="normative-metadata">
+<p><strong>Villkorsbilaga</strong> &middot; Status: <strong>UTKAST</strong> &middot; Version: <strong>0.1</strong></p>
+</div>
 
 # Bilaga F — Federationsregler för federationsmedlem
 

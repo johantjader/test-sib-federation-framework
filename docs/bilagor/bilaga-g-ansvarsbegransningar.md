@@ -1,6 +1,6 @@
 ---
 title: "Bilaga G — Ansvarsbegränsningar"
-sidebar_label: "Bilaga G"
+sidebar_label: "G. Ansvarsbegränsningar"
 sidebar_position: 7
 artifact_id: "bilaga-g"
 artifact_type: "villkorsbilaga"
@@ -11,10 +11,9 @@ applies_to:
   - ANS-OP
   - FM-förbindelse
 ---
-:::info Normativ artefakt
-Denna artefakt är en **villkorsbilaga** i federationsplattformen.
-Status: **UTKAST**. Version: **0.1**.
-:::
+<div className="normative-metadata">
+<p><strong>Villkorsbilaga</strong> &middot; Status: <strong>UTKAST</strong> &middot; Version: <strong>0.1</strong></p>
+</div>
 
 # Bilaga G — Ansvarsbegränsningar och riskfördelning
 

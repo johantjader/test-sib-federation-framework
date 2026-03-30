@@ -4,9 +4,6 @@ sidebar_label: "Anslutningsoperatör"
 sidebar_position: 1
 description: "Vägledning för organisationer som vill verka som anslutningsoperatör inom SIB."
 ---
-:::note Informativ
-Denna guide är informativ och sammanfattar normativa krav för målgruppen. För exakta och bindande regler, se [Bilaga B](../bilagor/bilaga-b-krav-infrastrukturtjanster) och relaterade avtalsmallar.
-:::
 
 # Guide för blivande anslutningsoperatörer
 

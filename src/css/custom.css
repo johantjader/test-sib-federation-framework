@@ -1,0 +1,682 @@
+/**
+ * Visuell profil: Digg.se / Myndighets- och specifikationsstil
+ * Anpassad efter digg.se, Sweden Connect, OIDC Sverige, ENA-infrastrukturen.
+ * Fokus: stram läsbarhet, Digg-navigering, platt design, WCAG-kontrast.
+ */
+
+/* ==========================================================================
+   1. FÄRGSCHEMA — LIGHT MODE
+   ========================================================================== */
+
+:root {
+  /* Digg marinblå (primärfärg) */
+  --ifm-color-primary: #004b87;
+  --ifm-color-primary-dark: #003d6e;
+  --ifm-color-primary-darker: #003560;
+  --ifm-color-primary-darkest: #002a4f;
+  --ifm-color-primary-light: #005a9e;
+  --ifm-color-primary-lighter: #0063ad;
+  --ifm-color-primary-lightest: #0074c8;
+
+  /* Digg turkos/ljusblå (accent för hover) */
+  --digg-accent: #00a4ce;
+  --digg-dark-blue: #004b87;
+  --digg-footer-bg: #111820;
+  --digg-footer-text: #e0e0e0;
+
+  /* Bakgrund */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8f9fa;
+
+  /* Text: hög kontrast, inte absolut svart */
+  --ifm-font-color-base: #1a1a1a;
+  --ifm-font-color-secondary: #525860;
+
+  /* Typografi: system-typsnitt */
+  --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --ifm-font-family-monospace: 'SFMono-Regular', Menlo, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+
+  /* Fontstorlek och radhöjd */
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.65;
+
+  /* Kantlinjer */
+  --ifm-hr-border-color: #dfe2e5;
+
+  /* Kodblock */
+  --ifm-code-font-size: 87.5%;
+  --ifm-code-border-radius: 3px;
+  --ifm-code-padding-horizontal: 0.35rem;
+  --ifm-code-padding-vertical: 0.15rem;
+
+  /* Navbar */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-height: 3.75rem;
+
+  /* Avrundning: minimal */
+  --ifm-global-radius: 3px;
+
+  /* Sidebar */
+  --doc-sidebar-width: 280px;
+}
+
+/* ==========================================================================
+   2. FÄRGSCHEMA — DARK MODE
+   ========================================================================== */
+
+[data-theme='dark'] {
+  --ifm-color-primary: #5ba3d9;
+  --ifm-color-primary-dark: #3f93d2;
+  --ifm-color-primary-darker: #3189cc;
+  --ifm-color-primary-darkest: #286fa8;
+  --ifm-color-primary-light: #77b3e0;
+  --ifm-color-primary-lighter: #85bbe3;
+  --ifm-color-primary-lightest: #add3ee;
+
+  --digg-accent: #4dc9e6;
+  --digg-dark-blue: #5ba3d9;
+
+  --ifm-background-color: #1b1b1d;
+  --ifm-background-surface-color: #242526;
+  --ifm-font-color-base: #e3e3e3;
+  --ifm-font-color-secondary: #a8a8a8;
+  --ifm-hr-border-color: #3e3e42;
+  --ifm-navbar-background-color: #1b1b1d;
+}
+
+/* ==========================================================================
+   3. TYPOGRAFI OCH RUBRIKER
+   ========================================================================== */
+
+/* H1 och H2: tunn grå linje under (GitHub/spec-stil) */
+.markdown h1 {
+  font-size: 1.85rem;
+  font-weight: 600;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #eaecef;
+  margin-bottom: 1rem;
+}
+
+.markdown h2 {
+  font-size: 1.45rem;
+  font-weight: 600;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid #eaecef;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+[data-theme='dark'] .markdown h1,
+[data-theme='dark'] .markdown h2 {
+  border-bottom-color: #3e3e42;
+}
+
+.markdown h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+}
+
+.markdown h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.3rem;
+}
+
+/* Löptext: ordentligt linjeavstånd för långa regelverk */
+.markdown p {
+  line-height: 1.7;
+  margin-bottom: 1em;
+}
+
+/* Listor: extra avstånd för kravlistor */
+.markdown ul,
+.markdown ol {
+  line-height: 1.7;
+  margin-bottom: 1em;
+}
+
+.markdown li {
+  margin-bottom: 0.3em;
+}
+
+.markdown li > ul,
+.markdown li > ol {
+  margin-top: 0.3em;
+}
+
+/* ==========================================================================
+   4. INLINE-KOD OCH KODBLOCK
+   ========================================================================== */
+
+/* Inline-kod: tydlig bakgrund och kantlinje */
+.markdown code {
+  background-color: rgba(175, 184, 193, 0.15);
+  border: 1px solid rgba(175, 184, 193, 0.25);
+  border-radius: 3px;
+  padding: 0.15em 0.35em;
+  font-size: 87.5%;
+}
+
+[data-theme='dark'] .markdown code {
+  background-color: rgba(110, 118, 129, 0.25);
+  border-color: rgba(110, 118, 129, 0.35);
+}
+
+/* Kodblock (pre > code): ingen extra border */
+.markdown pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Kodblock bakgrund */
+.prism-code {
+  background-color: #f6f8fa !important;
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+}
+
+[data-theme='dark'] .prism-code {
+  background-color: #161b22 !important;
+  border-color: #3e3e42;
+}
+
+/* ==========================================================================
+   5. TABELLER — Kritiskt för kravmatriser
+   ========================================================================== */
+
+.markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.markdown table th,
+.markdown table td {
+  border: 1px solid #dfe2e5;
+  padding: 0.6em 0.85em;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Tabellhuvud */
+.markdown table th {
+  background-color: #f0f2f4;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Zebra-striping */
+.markdown table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.markdown table tbody tr:hover {
+  background-color: #f0f2f4;
+}
+
+/* Dark mode tabeller */
+[data-theme='dark'] .markdown table th,
+[data-theme='dark'] .markdown table td {
+  border-color: #3e3e42;
+}
+
+[data-theme='dark'] .markdown table th {
+  background-color: #2a2a2e;
+}
+
+[data-theme='dark'] .markdown table tbody tr:nth-child(even) {
+  background-color: #242526;
+}
+
+[data-theme='dark'] .markdown table tbody tr:hover {
+  background-color: #2a2a2e;
+}
+
+/* ==========================================================================
+   6. ADMONITIONS — Digg dg-info-box-stil
+   ========================================================================== */
+
+/* Gemensamt: Digg-stil med tjock vänsterkant, ljus bakgrund, inga hårda kanter */
+.alert {
+  --ifm-alert-border-radius: 0;
+  border: none;
+  border-left: 5px solid var(--digg-dark-blue);
+  background-color: #f2f7fa;
+  padding: 1.5rem;
+  margin-bottom: 1.5em;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .alert {
+  background-color: #1e2a35;
+}
+
+/* Ikon: Digg-blå */
+.alert .admonitionHeading_node_modules-\@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module svg {
+  fill: var(--digg-dark-blue);
+}
+
+/* Rubrik i admonitions */
+.alert .admonitionHeading_node_modules-\@docusaurus-theme-classic-lib-theme-Admonition-Layout-styles-module {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--ifm-font-color-base);
+  margin-bottom: 0.5rem;
+  text-transform: none;
+}
+
+/* Listor inuti admonitions */
+.alert ul,
+.alert ol {
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+
+.alert li {
+  margin-bottom: 0.25em;
+}
+
+/* Info — Digg marinblå vänsterkant */
+.alert--info {
+  border-left-color: var(--digg-dark-blue);
+  background-color: #f2f7fa;
+}
+
+[data-theme='dark'] .alert--info {
+  background-color: #1a2332;
+  border-left-color: var(--digg-accent);
+}
+
+/* Note — ljusgrå (subtilare) */
+.alert--secondary {
+  border-left-color: #8c8c8c;
+  background-color: #f5f5f5;
+}
+
+[data-theme='dark'] .alert--secondary {
+  background-color: #242526;
+  border-left-color: #6e6e6e;
+}
+
+/* Warning — dämpad gul */
+.alert--warning {
+  border-left-color: #c59a00;
+  background-color: #fdf8ec;
+}
+
+[data-theme='dark'] .alert--warning {
+  background-color: #2a2518;
+  border-left-color: #c59a00;
+}
+
+/* Danger — dämpad röd */
+.alert--danger {
+  border-left-color: #b33030;
+  background-color: #fdf0f0;
+}
+
+[data-theme='dark'] .alert--danger {
+  background-color: #2a1818;
+  border-left-color: #b33030;
+}
+
+/* Tip — grön (för framtida bruk) */
+.alert--success {
+  border-left-color: #2e7d32;
+  background-color: #f0f8f0;
+}
+
+[data-theme='dark'] .alert--success {
+  background-color: #1a2a1a;
+  border-left-color: #2e7d32;
+}
+
+/* ==========================================================================
+   7. NAVBAR — Digg dg-header-menu stil
+   ========================================================================== */
+
+/* Vit bakgrund, ingen skugga, tunn underlinje */
+.navbar {
+  box-shadow: none;
+  border-bottom: 1px solid #eaecef;
+  padding: 0 1rem;
+}
+
+[data-theme='dark'] .navbar {
+  border-bottom-color: #3e3e42;
+}
+
+/* Logo / Titel */
+.navbar__title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ifm-font-color-base);
+}
+
+/* Menylänkar: mörk text, generös padding */
+.navbar__item,
+.navbar__link {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  padding: 0.5rem 0.85rem;
+  border-bottom: 4px solid transparent;
+  transition: border-bottom-color 0.15s ease;
+}
+
+[data-theme='dark'] .navbar__item,
+[data-theme='dark'] .navbar__link {
+  color: #e3e3e3;
+}
+
+/* Hover: turkos/ljusblå tjock underlinje (Digg-stil) */
+.navbar__link:hover,
+.navbar__item:hover {
+  color: #1a1a1a;
+  border-bottom-color: var(--digg-accent);
+}
+
+[data-theme='dark'] .navbar__link:hover,
+[data-theme='dark'] .navbar__item:hover {
+  color: #e3e3e3;
+  border-bottom-color: var(--digg-accent);
+}
+
+/* Aktiv länk: marinblå permanent underlinje */
+.navbar__link--active,
+.navbar__item--active {
+  color: #1a1a1a;
+  font-weight: 600;
+  border-bottom-color: var(--digg-dark-blue);
+}
+
+[data-theme='dark'] .navbar__link--active,
+[data-theme='dark'] .navbar__item--active {
+  color: #e3e3e3;
+  border-bottom-color: var(--digg-accent);
+}
+
+/* Externa länkikoner (GitHub etc) - inget understreck */
+.navbar__link[href^="https"]:not(.navbar__brand) {
+  border-bottom: 4px solid transparent;
+}
+
+.navbar__link[href^="https"]:not(.navbar__brand):hover {
+  border-bottom-color: var(--digg-accent);
+}
+
+/* ==========================================================================
+   8. SIDEBAR — Ren och minimalistisk
+   ========================================================================== */
+
+/* Sidebar bakgrund */
+.theme-doc-sidebar-container {
+  border-right: 1px solid #eaecef !important;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  border-right-color: #3e3e42 !important;
+}
+
+/* Sidebar-menyn */
+.menu__link {
+  font-size: 0.88rem;
+  line-height: 1.4;
+  border-radius: 0;
+  padding: 0.35rem 0.7rem;
+}
+
+/* Aktiv menyrad: primärfärg + vertikal linje */
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  border-left: 3px solid var(--ifm-color-primary);
+  padding-left: calc(0.7rem - 3px);
+}
+
+/* Hover: subtil bakgrund */
+.menu__link:hover {
+  background-color: rgba(0, 75, 135, 0.04);
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background-color: rgba(91, 163, 217, 0.08);
+}
+
+/* Kategorier */
+.menu__link--sublist {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--ifm-font-color-secondary);
+}
+
+/* ==========================================================================
+   9. FOOTER — Digg mörk stil
+   ========================================================================== */
+
+.footer {
+  background-color: var(--digg-footer-bg) !important;
+  border-top: none;
+  padding: 2.5rem 0 2rem;
+}
+
+.footer__title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.footer__link-item {
+  font-size: 0.88rem;
+  line-height: 2;
+  color: var(--digg-footer-text);
+  text-decoration: none;
+}
+
+.footer__link-item:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Footer copyright band */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+}
+
+.footer__copyright {
+  font-size: 0.82rem;
+  color: var(--digg-footer-text);
+  text-align: center;
+}
+
+/* Copyright-länkar i Digg-stil */
+.footer__copyright a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer__copyright a:hover {
+  text-decoration: underline;
+  color: var(--digg-accent);
+}
+
+/* Footer kolumnmellanrum */
+.footer__links {
+  gap: 3rem;
+}
+
+/* Dark mode: footern är redan mörk, men konsistens */
+[data-theme='dark'] .footer {
+  background-color: #0a0f14 !important;
+}
+
+/* ==========================================================================
+   10. NORMATIVE METADATA HEADER
+   ========================================================================== */
+
+.normative-metadata {
+  background-color: #f5f5f5;
+  border: 1px solid #dfe2e5;
+  border-left: 4px solid var(--digg-dark-blue);
+  border-radius: 0;
+  padding: 0.65rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+.normative-metadata p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.normative-metadata strong {
+  color: var(--ifm-font-color-base);
+  font-weight: 600;
+}
+
+[data-theme='dark'] .normative-metadata {
+  background-color: #242526;
+  border-color: #3e3e42;
+  border-left-color: var(--digg-accent);
+}
+
+/* ==========================================================================
+   11. TABLE OF CONTENTS (högerkolumn)
+   ========================================================================== */
+
+.table-of-contents__link {
+  font-size: 0.82rem;
+}
+
+.table-of-contents__link--active {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+/* ==========================================================================
+   12. BREADCRUMBS
+   ========================================================================== */
+
+.breadcrumbs__link {
+  font-size: 0.82rem;
+}
+
+/* ==========================================================================
+   13. PAGINATION (föregående/nästa)
+   ========================================================================== */
+
+.pagination-nav__link {
+  border: 1px solid #dfe2e5;
+  border-radius: 3px;
+}
+
+[data-theme='dark'] .pagination-nav__link {
+  border-color: #3e3e42;
+}
+
+.pagination-nav__sublabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* ==========================================================================
+   14. FETSTIL OCH BLOCKQUOTES
+   ========================================================================== */
+
+.markdown strong {
+  font-weight: 700;
+  color: var(--ifm-font-color-base);
+}
+
+.markdown blockquote {
+  border-left: 3px solid #dfe2e5;
+  color: var(--ifm-font-color-secondary);
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background-color: transparent;
+}
+
+[data-theme='dark'] .markdown blockquote {
+  border-left-color: #3e3e42;
+}
+
+/* Horisontella linjer */
+.markdown hr {
+  border: none;
+  border-top: 1px solid #eaecef;
+  margin: 2rem 0;
+}
+
+[data-theme='dark'] .markdown hr {
+  border-top-color: #3e3e42;
+}
+
+/* ==========================================================================
+   15. SCROLLBAR (subtil)
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ==========================================================================
+   16. RESPONSIVITET
+   ========================================================================== */
+
+@media (max-width: 996px) {
+  .markdown h1 {
+    font-size: 1.55rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.25rem;
+  }
+
+  /* Tabeller: horisontell scroll på smala skärmar */
+  .markdown table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Navbar: minska padding i mobil */
+  .navbar__item,
+  .navbar__link {
+    border-bottom: none;
+  }
+}

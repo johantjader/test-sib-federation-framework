@@ -1,6 +1,6 @@
 ---
 title: "Bilaga B — Krav på infrastrukturtjänster"
-sidebar_label: "Bilaga B"
+sidebar_label: "B. Infrastrukturtjänster"
 sidebar_position: 2
 artifact_id: "bilaga-b"
 artifact_type: "villkorsbilaga"
@@ -10,10 +10,9 @@ applies_to:
   - FED-OP
   - ANS-OP
 ---
-:::info Normativ artefakt
-Denna artefakt är en **villkorsbilaga** i federationsplattformen.
-Status: **UTKAST**. Version: **0.1**.
-:::
+<div className="normative-metadata">
+<p><strong>Villkorsbilaga</strong> &middot; Status: <strong>UTKAST</strong> &middot; Version: <strong>0.1</strong></p>
+</div>
 
 # Bilaga B — Krav på federationsinfrastrukturtjänster
 

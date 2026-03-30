@@ -4,9 +4,6 @@ sidebar_label: "Arkitektur"
 sidebar_position: 3
 description: "Beskrivning av federationsplattformens typ/instans-modell och legala konstruktion."
 ---
-:::note Informativ
-Denna sida är informativ. Den förklarar hur juridiken i plattformen tillämpas, men texten här är i sig inte bindande. För bindande regler, se [Bilaga F](../bilagor/bilaga-f-federationsregler) och relaterade avtalsmallar.
-:::
 
 # Avtalsarkitektur
 

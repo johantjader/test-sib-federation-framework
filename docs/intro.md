@@ -2,11 +2,9 @@
 title: "Introduktion till Regelverket"
 sidebar_label: "Introduktion"
 sidebar_position: 1
+slug: /
 description: "Övergripande beskrivning över federationsplattformens regelverk inom Samordnad identitet och behörighet."
 ---
-:::note Informativ
-Denna sida är informativ. Den introducerar regelverket men skapar inga egna bindande krav. För bindande regler, se de normativa avtalsmallarna och villkorsbilagorna.
-:::
 
 # Samordnad identitet och behörighet — Federationsplattformens regelverk
 

@@ -1,6 +1,6 @@
 ---
 title: "Bilaga E — Förändringspolicy"
-sidebar_label: "Bilaga E"
+sidebar_label: "E. Förändringspolicy"
 sidebar_position: 5
 artifact_id: "bilaga-e"
 artifact_type: "villkorsbilaga"
@@ -11,10 +11,9 @@ applies_to:
   - ANS-OP
   - FM-förbindelse
 ---
-:::info Normativ artefakt
-Denna artefakt är en **villkorsbilaga** i federationsplattformen.
-Status: **UTKAST**. Version: **0.1**.
-:::
+<div className="normative-metadata">
+<p><strong>Villkorsbilaga</strong> &middot; Status: <strong>UTKAST</strong> &middot; Version: <strong>0.1</strong></p>
+</div>
 
 # Bilaga E — Förändringspolicy
 

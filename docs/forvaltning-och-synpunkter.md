@@ -4,9 +4,6 @@ sidebar_label: "Förvaltning"
 sidebar_position: 4
 description: "Information om hur federationsplattformens regelverk underhålls, hur versioner ska tolkas, och hur en extern aktör lämnar synpunkter."
 ---
-:::note Informativ
-Denna sida förklarar hur dokumentationen underhålls. Det är en praktisk lathund för dig som besöker plattformens repository.
-:::
 
 # Förvaltning av Regelverket
 

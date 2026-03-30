@@ -4,9 +4,6 @@ sidebar_label: "Federationsmedlem"
 sidebar_position: 2
 description: "Vägledning för organisationer som vill ansluta sina system som federationsmedlem inom SIB."
 ---
-:::note Informativ
-Denna guide är informativ och sammanfattar normativa krav för målgruppen. För exakta och bindande regler, se regelverkets normativa bilagor.
-:::
 
 # Guide: Att ansluta som federationsmedlem
 

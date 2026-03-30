@@ -4,9 +4,6 @@ sidebar_label: "Artefaktkarta"
 sidebar_position: 2
 description: "En beskrivning av hur avtal, bilagor och policyer relaterar till varandra i federationsplattformen."
 ---
-:::note Informativ
-Denna sida är informativ. Den förklarar relationerna i regelverket men uppställer inga egna krav. 
-:::
 
 # Arkitekturkarta över regelverket
 

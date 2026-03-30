@@ -1,6 +1,6 @@
 ---
 title: "Bilaga C — Krav på medlemskomponenter"
-sidebar_label: "Bilaga C"
+sidebar_label: "C. Medlemskomponenter"
 sidebar_position: 3
 artifact_id: "bilaga-c"
 artifact_type: "villkorsbilaga"
@@ -9,10 +9,9 @@ normative_status: "UTKAST"
 applies_to:
   - FM-förbindelse
 ---
-:::info Normativ artefakt
-Denna artefakt är en **villkorsbilaga** i federationsplattformen.
-Status: **UTKAST**. Version: **0.1**.
-:::
+<div className="normative-metadata">
+<p><strong>Villkorsbilaga</strong> &middot; Status: <strong>UTKAST</strong> &middot; Version: <strong>0.1</strong></p>
+</div>
 
 # Bilaga C — Krav på federationsmedlemmars komponenter
 
