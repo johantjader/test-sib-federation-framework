@@ -1,6 +1,6 @@
 ---
-title: "Bilaga D — Tekniska specifikationer"
-sidebar_label: "D. Tekniska specifikationer"
+title: "Bilaga D — Tekniskt ramverk"
+sidebar_label: "D. Tekniskt ramverk"
 sidebar_position: 4
 artifact_id: "bilaga-d"
 artifact_type: "villkorsbilaga"
@@ -16,13 +16,13 @@ applies_to:
 <p><strong>Villkorsbilaga</strong> &middot; Status: <strong>UTKAST</strong> &middot; Version: <strong>0.1</strong></p>
 </div>
 
-# Bilaga D — Tekniska specifikationer och profiler
+# Bilaga D — Tekniskt ramverk
 
 **Federationsplattformens villkorsbilaga**
 
 ---
 
-| | |
+| Egenskap | Värde |
 |---|---|
 | Ägs av | Ledningsaktören |
 | Refereras från | Alla avtalsmallar |

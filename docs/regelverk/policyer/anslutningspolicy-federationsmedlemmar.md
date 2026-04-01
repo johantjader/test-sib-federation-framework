@@ -21,7 +21,7 @@ applies_to:
 
 ---
 
-| | |
+| Egenskap | Värde |
 |---|---|
 | Ägs av | Ledningsaktören |
 | Refereras från | ANS-OP-avtal, FM-anslutningsförbindelse |

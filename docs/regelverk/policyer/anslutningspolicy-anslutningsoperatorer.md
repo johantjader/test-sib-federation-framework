@@ -21,7 +21,7 @@ applies_to:
 
 ---
 
-| | |
+| Egenskap | Värde |
 |---|---|
 | Ägs av | Ledningsaktören |
 | Refereras från | FED-OP-avtal, ANS-OP-avtal |
@@ -30,54 +30,78 @@ applies_to:
 
 ---
 
-*Denna policy är i skelettformat. Fullständig utformning tas fram i kommande iteration.*
+*Denna policy är i skelettformat. Fullständig utformning tas fram i kommande iterationer.*
 
 ## 1. Syfte
 
 Denna policy beskriver krav och kontroller vid godkännande av anslutningsoperatör inom en federationskontext. Policyn reglerar den organisatoriska, tekniska och avtalsmässiga prövning som krävs innan en organisation kan verka som anslutningsoperatör.
 
-Denna policy operationaliserar krav B.1.01–B.1.07 i [Bilaga B](/regelverk/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster).
+## 2. Vad andra parter kan förutsätta
 
-## 2. Tillämpningsområde
+(Betoning på systemtillit och operatörens garantier)
 
-Policyn tillämpas av federationsoperatören (eller ledningsaktören vid plattformsgemensam ackreditering) vid granskning och godkännande av anslutningsoperatörer.
+## 3. Omfattning och avgränsning
 
-## 3. Jämförelse: krav på federationsmedlem respektive anslutningsoperatör
+(Tydliggörande att tekniska krav hanteras i separat dokument)
 
-Nedanstående tabell sammanfattar skillnaderna i anslutningskrav. Anslutningsoperatörer underkastar sig skärpta krav eftersom de agerar med fullmakt och hanterar tillit för andra organisationer.
+## 4. Roller och ansvar
 
-| Område | Federationsmedlem | Anslutningsoperatör | Motivering |
-|---|---|---|---|
-| Organisationsform | Svensk juridisk person, aktiv status | Svensk juridisk person, aktiv status | Samma grundkrav |
-| Informationssäkerhet | Systematiskt informationssäkerhetsarbete (F.10) | Systematiskt informationssäkerhetsarbete med dokumenterade rutiner för nyckelmaterial och incidenthantering (B.1.05–B.1.07) | AO hanterar nyckelmaterial och metadata åt andra |
-| Teknisk kapacitet | Uppfylla Bilaga C för registrerade komponenter | Driva anslutningstjänst (Intermediate Entity) enligt Bilaga B.1 | AO tillhandahåller infrastruktur |
-| Incidenthantering | Anmäla incidenter utan onödigt dröjsmål (F.20) | Bemannad kontaktväg under kontorstid med eskaleringsmöjlighet (B.1.04) | AO är kontaktpunkt för flera medlemmar |
-| Kontaktpersoner | Behörig företrädare och kontaktpersoner (F.04) | Behörig företrädare, teknisk och administrativ kontaktperson anmälda till federationsoperatören (B.1.02–B.1.03) | AO rapporterar direkt till FED-OP |
-| Granskning | Verifiering via anslutningsoperatör | Granskning av federationsoperatör eller ledningsaktör | Högre granskningsnivå för AO |
-| Avtal | FM-anslutningsförbindelse | ANS-OP-avtal med fullmakt | AO får fullmakt att agera i FED-OP:s namn |
+(Relationen mellan Federationsoperatör och Anslutningsoperatör)
 
-## 4. Grundläggande krav
+## 5. Definitioner
 
-### 4.1 Organisatoriska krav
+## 6. Organisationsverifiering och behörighetskontroll
 
-[ATT UTVECKLA] — Operationalisering av B.1.01–B.1.03. Avser organisationsform, ledning, ekonomisk stabilitet och förmåga att fullgöra uppdraget över tid.
+### 6.1 Verifiering av svensk organisation och säte
 
-### 4.2 Tekniska krav
+### 6.2 Verifiering av finansiell stabilitet och ägarstruktur
 
-[ATT UTVECKLA] — Operationalisering av B.1.10–B.1.14. Avser förmåga att driva anslutningstjänst, publicera metadata, hantera nyckelmaterial och upprätthålla tillgänglighet.
+### 6.3 Kvalificering av organisationens mognad
 
-### 4.3 Informationssäkerhetskrav
+### 6.4 Verifiering att avtalstecknare är behörig företrädare
 
-[ATT UTVECKLA] — Operationalisering av B.1.05–B.1.07. Avser systematiskt informationssäkerhetsarbete, dokumenterade rutiner för nyckelhantering och incidenthantering.
+#### 6.4.1 Identifiera avtalstecknare
 
-## 5. Granskning och tillsyn
+#### 6.4.2 Verifiera behörig företrädare
 
-[ATT UTVECKLA] — Beskriver granskningsprocessen, vilka kontroller som genomförs, dokumentationskrav och beslutskriterier. Inkluderar löpande tillsyn efter godkännande.
+### 6.5 Kvalificera behöriga kontaktpersoner
 
-## 6. Beslut om godkännande
+(Särskilt fokus på säkerhetsansvariga)
 
-[ATT UTVECKLA] — Beskriver beslutsprocessen, vem som fattar beslut, villkor för godkännande, och eventuella förbehåll eller villkorat godkännande.
+## 7. Spårbarhet och krav på dokumentation vid anslutningsärenden
 
-## 7. Exit-hantering och avveckling
+## 8. Verifiering genom oberoende kanalbekräftelse
 
-[ATT UTVECKLA] — Beskriver ordnad avveckling vid uppsägning eller återkallelse av godkännande. Redan ingångna FM-anslutningsförbindelser påverkas inte av att fullmakten upphör (ANS-OP-avtal 11.4).
+## 9. Avgränsning mot åtkomst- och verksamhetsbeslut 
+
+(Operatörens roll som förmedlare, ej beslutande part)
+
+## 10. Livscykelhantering — verifiering och tillsyn över tid
+
+### 10.1. Periodisk re-verifiering av organisationsuppgifter
+
+### 10.2. Obligatorisk on-site revision 
+
+(Krav på fysisk inställelse för kontroll av processer)
+
+### 10.3. Händelsestyrd re-verifiering 
+
+(t.ex. vid ägarbyte eller betydande organisationsförändring)
+
+### 10.4. Incidenthantering och åtgärdstrappor 
+
+(Eskalering vid bristande efterlevnad)
+
+### 10.5. Ändring av behöriga kontaktpersoner
+
+## 11. Dokumentation av process och rutin för tillämpning av anslutningspolicy
+
+## 12. Avveckling, överlåtelse och exit-hantering
+
+### 12.1. Krav på plan för kontrollerad avveckling
+
+### 12.2. Säkerställande av medlemskontinuitet vid operatörsbyte
+
+### 12.3. Överlåtelse av tekniska åtaganden och data
+
+### 12.4. Uppsägning och avslut av anslutning

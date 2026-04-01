@@ -20,7 +20,7 @@ applies_to:
 
 ---
 
-| | |
+| Egenskap | Värde |
 |---|---|
 | Ägs av | Ledningsaktören |
 | Refereras från | FM-anslutningsförbindelse |

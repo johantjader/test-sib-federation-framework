@@ -21,7 +21,7 @@ applies_to:
 
 ---
 
-| | |
+| Egenskap | Värde |
 |---|---|
 | Datum | [datum] |
 | Ägs av | Ledningsaktören |

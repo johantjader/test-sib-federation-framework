@@ -22,7 +22,7 @@ applies_to:
 
 ---
 
-| | |
+| Egenskap | Värde |
 |---|---|
 | Datum | [datum] |
 | Träder i kraft | TBD |
