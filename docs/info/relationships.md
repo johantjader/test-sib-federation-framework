@@ -13,16 +13,16 @@ Här förklarar vi hur federationsplattformens olika dokument — avtalsmallar, 
 
 ## 1. Grundprincip
 
-Regelverket är uppdelat i lager, där varje instans har ett tydligt ansvarsområde:
+Regelverket är uppdelat i lager, där varje lager har ett tydligt ansvarsområde:
 
 | Lager | Funktion | Frågan det besvarar | Stabilitet |
 |---|---|---|---|
-| **Avtalsmallar** | Skapar formella juridiska relationer | *Vem* binder sig till *vad*? | Hög (ändras sällan) |
+| **Avtalsmallar** | Tillhandahåller enhetliga mallar; instansierade avtal skapar rättsliga relationer | *Vem* binder sig till *vad*? | Hög (ändras sällan) |
 | **Villkorsbilagor** | Anger detaljerade krav och tekniska regler | *Vad* ska vi uppnå? | Hög (ändras via fastställd förändringspolicy) |
-| **Policyer** | Beskriver operationella processer | *Hur* mäter vi at kraven uppfylls? | Medel (uppdateras löpande och publiceras separat) |
+| **Policyer** | Operationaliserar bilagornas krav till harmoniserade processer | *Hur* omsätts kraven i praktiken? | Medel (uppdateras löpande och publiceras separat) |
 | **Styrningsdokument** | Reglerar hela ekosystemets inriktning | *När* och *varför* fattas strukturbeslut? | Hög |
 
-Ingen skriftlig del står för sig själv. Bilagor införlivas automatiskt via avtalen, och policyer anger arbetsgången för att bygga tjänster som svarar mot bilagornas krav.
+Ingen skriftlig del står för sig själv. Bilagor införlivas via avtalen, och policyer operationaliserar bilagornas krav till processer som kan tillämpas enhetligt.
 
 ---
 
@@ -30,7 +30,7 @@ Ingen skriftlig del står för sig själv. Bilagor införlivas automatiskt via a
 
 ### Avtalsmallar bygger på Villkorsbilagor
 
-För att undvika att laglig text dubbleras, pekar avtalen in [Villkorsbilagorna (A–G)](bilagor/bilaga-a-definitioner) per referens.
+För att undvika att laglig text dubbleras, pekar avtalen in [Villkorsbilagorna (A–G)](/villkorsbilagor/bilaga-a-definitioner) per referens.
 
 * **FED-OP-avtal** (Mellan Ledningsaktör och Federationsoperatör): Inkorporerar Bilaga A, B, D, E, G.
 * **ANS-OP-avtal** (Mellan Federationsoperatör och Anslutningsoperatör): Inkorporerar Bilaga A, B, C, D, E, F, G.
@@ -46,22 +46,18 @@ För att undvika att laglig text dubbleras, pekar avtalen in [Villkorsbilagorna 
 
 ### Villkorsbilagor sinsemellan
 
-Bilagorna "pratar" också med varandra för ett tätt knutet regelverk:
-* **Definitioner (Bilaga A):** Är ordboken som alla andra dokument bygger på.
-* **Krav på Infrastruktur (Bilaga B) & Komponenter (Bilaga C):** Hämtar exakta protokoll-krav från **Tekniska specifikationer (Bilaga D)**.
-* **Förändringspolicy (Bilaga E):** Är den processuella motorn som styr i vilken ordning och med vilka varsel som övriga bilagor får justeras framöver.
-* **Ansvarsbegränsningar (Bilaga G):** Interagerar med **Federationsreglerna (Bilaga F)** för att hantera riskfördelning och direktkravsrätt vid digitala incidenter.
+Bilagorna hänger ihop och bildar ett tätt knutet regelverk. Bilaga A (Definitioner) är den gemensamma ordboken som alla andra dokument bygger på. Bilaga B (Krav på infrastrukturtjänster) och Bilaga C (Krav på medlemskomponenter) hämtar sina protokollkrav från Bilaga D (Tekniska specifikationer). Bilaga E (Förändringspolicy) styr i vilken ordning och med vilka varsel som övriga bilagor får justeras. Bilaga G (Ansvarsbegränsningar) samverkar med Bilaga F (Federationsregler) för att hantera riskfördelning och direktkravsrätt.
 
 ---
 
 ## 3. Livscykel: Från ansökan till driftsatt system
 
-För en anslutande myndighet ser det juridiska flödet typiskt ut så här:
+För en anslutande organisation ser det juridiska flödet typiskt ut så här:
 
-1. **Ansökan:** Myndigheten kontaktar en godkänd Anslutningsoperatör (AO). AO säkerställer (via kommande anslutningspolicyer) att ansökan håller måttet.
-2. **Avtalsslutande:** AO tecknar, med fullmakt, den standardiserade `FM-anslutningsförbindelsen` med den nya federationsmedlemmen i stället för Federationsoperatören. Detta binder medlemmen till Bilaga F.
-3. **Teknisk Registrering:** Medlemmen lägger därefter in sina IT-system. AO verifierar systemen som skall möta alla tekniska krav enligt Bilaga C. Information publiceras sedan till det centrala registret över betrodda system.
-4. **Drift & Verifikation:** Andra medlemmars IT-system kan nu elektroniskt verifiera det anslutna systemet och utgå ifrån att medlemmen tar ansvaret enligt kraven i Bilaga F, punkt F.30–33.
+1. **Ansökan:** Organisationen kontaktar en godkänd anslutningsoperatör som säkerställer att ansökan uppfyller anslutningspolicyns krav.
+2. **Avtalsslutande:** Anslutningsoperatören tecknar, med fullmakt, en standardiserad FM-anslutningsförbindelse med den nya federationsmedlemmen. Detta binder medlemmen till Bilaga F.
+3. **Teknisk registrering:** Medlemmen registrerar sina tekniska komponenter. Anslutningsoperatören verifierar att de uppfyller kraven i Bilaga C och publicerar metadata till federationsinfrastrukturen.
+4. **Drift och verifikation:** Andra medlemmars system kan nu verifiera det anslutna systemet via federationsinfrastrukturen och förlita sig på att medlemmen bär ansvar enligt kraven i Bilaga F, punkt F.30–F.33.
 
 ---
 

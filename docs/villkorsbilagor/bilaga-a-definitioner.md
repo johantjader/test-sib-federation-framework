@@ -22,10 +22,12 @@ applies_to:
 
 ---
 
-| Version | 0.2 |
+| | |
 |---|---|
 | Ägs av | Ledningsaktören |
 | Refereras från | Alla avtalsmallar |
+| Träder i kraft | TBD |
+| Beslutsdatum | TBD |
 
 ---
 
@@ -37,32 +39,35 @@ applies_to:
 | **Federationsoperatör** | Den organisation som inom en federationskontext tillhandahåller och driver centrala federationsinfrastrukturtjänster och som avtalar med anslutningsoperatörer. |
 | **Anslutningsoperatör** | Den organisation som, efter godkännande av federationsoperatören, hanterar den tekniska och administrativa anslutningen av federationsmedlemmar till en federationskontext, genomför föreskrivna kontroller samt driver anslutningstjänst. Anslutningsoperatör är en verksamhetsroll, inte en teknisk nod. Vid anslutning av federationsmedlemmar agerar anslutningsoperatören i federationsoperatörens namn och för dennes räkning med stöd av fullmakt. |
 | **Federationsmedlem** | Juridisk person som genom FM-anslutningsförbindelse har anslutits till en federationskontext och som därmed får registrera tekniska komponenter i federationen enligt tillämpligt regelverk. |
-| **Förlitande part** | Federationsmedlem som förlitar sig på tillitsinformation förmedlad via federationsinfrastrukturen för att fatta åtkomstbeslut. |
+| **Förlitande part (Relying Party, RP)** | Federationsmedlem som förlitar sig på tillitsinformation förmedlad via federationsinfrastrukturen för att fatta åtkomstbeslut. |
 | **Utfärdare av behörighetshandling** | Federationsmedlem som ställer ut och garanterar riktigheten i intyg om identitet eller behörighet. *(Ingår inte i Steg 1.)* |
-| **Tillitsoperatör** | Organisation som utfärdar och förvaltar tillitsmärken (egenskapsintyg) för tekniska komponenter. |
-| **Tillitsmärkesägare** | Organisation som definierar vilka egenskaper ett tillitsmärke uttrycker och vilka krav som ska uppfyllas. |
+| **Egenskapsintygsoperatör (Trustmark Issuer)** | Organisation som utfärdar och förvaltar egenskapsintyg (trust marks) för tekniska komponenter. |
+| **Egenskapsintygsägare (Trustmark Owner)** | Organisation som definierar vilka egenskaper ett egenskapsintyg uttrycker och vilka krav som ska uppfyllas. |
 
 ## 2. Mappning mot legal rollmodell
 
-Federationsplattformens avtalsmallar använder termerna ovan. Den legala rollmodellen (se *Roller och ansvar — teknisk och juridisk samordning*) skiljer mellan legala parter och tjänsteorienterade roller:
+Federationsplattformens avtalsmallar använder termerna ovan. Tabellen nedan visar hur varje avtalsterm fördelar sig mellan ansvarsbärande funktion och tjänsteorienterad roll:
 
-| Avtalsterm | Legal part (ansvarsbärande) | Tjänsteorienterad roll (genomförande) |
+| Avtalsterm | Ansvarsbärande funktion | Tjänsteorienterad roll |
 |---|---|---|
-| Ledningsaktör | Ledningsansvarig | — |
-| Federationsoperatör | Federationsansvarig | Federationsoperatör (drift av centrala tjänster) |
-| Anslutningsoperatör | — (agerar med fullmakt för federationsoperatören) | Anslutningsoperatör (anslutning, registrering) |
-| Federationsmedlem | Federationsmedlem | Förlitande part / Utfärdare (operativa roller) |
+| Ledningsaktör | Äger och förvaltar federationsplattformen. Bär övergripande ansvar för regelverk och styrning. | — |
+| Federationsoperatör | Bär ansvar för drift och tillitsstruktur inom federationskontexten. | Federationsoperatör (drift av tillitsankare, resolver m.m.) |
+| Anslutningsoperatör | Agerar med fullmakt för federationsoperatören. Bär metodansvar för korrekt genomförda kontroller och egen publicering. | Anslutningsoperatör (anslutning, registrering) |
+| Federationsmedlem | Bär ansvar för korrekthet i egna uppgifter och komponenter. | Förlitande part / Utfärdare (operativa roller) |
+| *Egenskapsintygsoperatör* | *Utfärdar egenskapsintyg på uppdrag av egenskapsintygsägare. Ingår i Steg 2.* | *Egenskapsintygsoperatör (Trustmark Issuer)* |
+| *Egenskapsintygsägare* | *Definierar egenskapsintygens krav och innebörd. Ingår i Steg 2.* | *— (Trustmark Owner)* |
 
-Det juridiska ansvaret bärs av den legala parten, även när operativa uppgifter läggs ut på en tjänsteorienterad roll. Anslutningsoperatörens agerande i medlemsledet sker i federationsoperatörens namn.
+*Roller markerade med kursiv ingår i Steg 2 i den taktiska färdplanen.*
+
+Det juridiska ansvaret bärs av den ansvarsbärande funktionen, även när operativa uppgifter läggs ut på en tjänsteorienterad roll. Anslutningsoperatörens agerande i medlemsledet sker i federationsoperatörens namn.
 
 ## 3. Infrastruktur och kontext
 
 | Term | Definition |
 |---|---|
 | **Federationsplattform** | Den gemensamma uppsättningen av bindande och informativa artefakter som utgör grunden för alla federationskontexter. |
-| **Federationskontext** | En avgränsad instans av federationsplattformen med utsedd federationsoperatör, definierat tillämpningsområde och eventuella uttryckligt tillåtna kontextspecifika avgränsningar. |
-| **Instansblad** | Det dokument där den aktuella federationskontextens partsuppgifter, namn, målgrupp, syfte, särskilda avgränsningar och pilotstatus anges. |
-| **Samverkanskontext** | Definieras av vilka tillitsmärken en tjänst har erhållit. Ska inte förväxlas med federationskontext. |
+| **Federationskontext** | En instans som bygger på den gemensamma federationsplattformen, med utsedd federationsoperatör, definierat tillämpningsområde och eventuella kontextspecifika avgränsningar. |
+| **Samverkanskontext** | Definieras av vilka egenskapsintyg en tjänst har erhållit. Ska inte förväxlas med federationskontext. |
 
 ## 4. Tekniska begrepp
 
@@ -74,7 +79,7 @@ Det juridiska ansvaret bärs av den legala parten, även när operativa uppgifte
 | **Uppslags- och verifieringstjänst (Resolver)** | Tjänst för automatiserat uppslag och validering av metadata. |
 | **Anslutningstjänst (Intermediate Entity)** | Teknisk tjänst som drivs av en anslutningsoperatör för registrering, publicering och livscykelhantering av federationsmedlemmars metadata. |
 | **Tillitskedja** | Den kryptografiskt verifierbara kedjan från en teknisk komponents metadata till tillitsankartjänsten. |
-| **Tillitsmärke (trust mark)** | Maskinellt verifierbart intyg om att en aktör eller komponent uppfyller specifika krav. *(Ingår inte i Steg 1.)* |
+| **Egenskapsintyg (trust mark)** | Maskinellt verifierbart intyg om att en aktör eller komponent uppfyller specifika krav. *(Ingår inte i Steg 1.)* |
 
 ## 5. Avtal och regelverk
 

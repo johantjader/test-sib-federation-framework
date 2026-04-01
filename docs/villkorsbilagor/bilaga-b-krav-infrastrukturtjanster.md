@@ -21,11 +21,13 @@ applies_to:
 
 ---
 
-| Version | 0.2 |
+| | |
 |---|---|
 | Datum | [datum] |
 | Ägs av | Ledningsaktören |
 | Refereras från | FED-OP-avtal, ANS-OP-avtal |
+| Träder i kraft | TBD |
+| Beslutsdatum | TBD |
 
 ---
 
@@ -66,7 +68,7 @@ Anslutningstjänsten drivs av anslutningsoperatören och hanterar registrering o
 | Krav-ID | Krav |
 |---|---|
 | B.1.20 | Anslutningsoperatören ska vid anslutning genomföra de kontroller som föreskrivs i anslutningspolicyn. |
-| B.1.21 | Varje anslutning ska dokumenteras med minst: tidpunkt, identifierade kontrollmoment, utfall, behörig företrädare, version av FED-MED-avtal. |
+| B.1.21 | Varje anslutning ska dokumenteras med minst: tidpunkt, identifierade kontrollmoment, utfall, behörig företrädare, version av FM-anslutningsförbindelse. |
 | B.1.22 | Vid registrering av tekniska komponenter ska metadata kontrolleras mot tillämpliga krav i Bilaga C. |
 | B.1.23 | Organisationskoppling ska verifieras. |
 | B.1.24 | Domänkontroll ska styrkas. |

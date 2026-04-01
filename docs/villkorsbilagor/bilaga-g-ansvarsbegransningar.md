@@ -22,10 +22,12 @@ applies_to:
 
 ---
 
-| Version | 0.2 |
+| | |
 |---|---|
 | Ägs av | Ledningsaktören |
 | Refereras från | Alla avtalsmallar |
+| Träder i kraft | TBD |
+| Beslutsdatum | TBD |
 
 ---
 

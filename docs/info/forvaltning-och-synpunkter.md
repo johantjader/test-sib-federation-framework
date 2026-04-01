@@ -46,7 +46,7 @@ Ledningsaktören ansvarar för ordning och reda i lagarna. När regelverket är 
 Vi välkomnar åsikter medan arkitekturen byggs!
 
 Eftersom vi använder GitHub publiceras allt öppet, och den primära metoden för att lämna synpunkter är genom **GitHub Issues**:
-1. Navigera till *Issues*-fliken i toppen på detta [GitHub-repository](https://github.com).
+1. Navigera till *Issues*-fliken i toppen på detta [GitHub-repository](https://github.com/johantjader/test-sib-federation-framework).
 2. Skapa en "New Issue".
 3. Beskriv vilket dokument din synpunkt berör (inkludera gärna exakt krav-ID, såsom "Bilaga C.2.04" eller länk till mappen).
 4. Redogör för vad du anser är problematiskt eller bör klargöras, och ge gärna ett lösningsförslag. 

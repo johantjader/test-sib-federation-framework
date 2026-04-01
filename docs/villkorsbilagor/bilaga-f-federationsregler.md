@@ -20,10 +20,12 @@ applies_to:
 
 ---
 
-| Version | 0.2 |
+| | |
 |---|---|
 | Ägs av | Ledningsaktören |
 | Refereras från | FM-anslutningsförbindelse |
+| Träder i kraft | TBD |
+| Beslutsdatum | TBD |
 
 ---
 

@@ -1,19 +1,19 @@
 ---
 title: "Avtalsmall FED-OP"
 sidebar_label: "FED-OP"
-sidebar_position: 3
+sidebar_position: 1
 artifact_id: "fed-op-avtal"
 artifact_type: "avtalsmall"
 version: "0.1"
 normative_status: "UTKAST"
-description: "Avtalsmall \u00b7 Status: UTKAST \u00b7 Version: 0.1"
+description: "Avtalsmall \u00b7 Status: UTKAST — skelett \u00b7 Version: 0.1"
 applies_to:
   - FED-OP
   - ANS-OP
   - FM-förbindelse
 ---
 <div className="normative-metadata">
-<p><strong>Avtalsmall</strong> &middot; Status: <strong>UTKAST</strong> &middot; Version: <strong>0.1</strong></p>
+<p><strong>Avtalsmall</strong> &middot; Status: <strong>UTKAST — skelett</strong> &middot; Version: <strong>0.1</strong></p>
 </div>
 
 # Avtalsmall FED-OP — Ledningsaktör och Federationsoperatör
@@ -22,10 +22,11 @@ applies_to:
 
 ---
 
-| Mallversion | 0.2 |
+| | |
 |---|---|
 | Datum | [datum] |
-| Status | UTKAST — skelett |
+| Träder i kraft | TBD |
+| Beslutsdatum | TBD |
 
 ---
 

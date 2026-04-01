@@ -2,7 +2,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Regelverk f\u00f6r Samordnad identitet och beh\u00f6righet',
+  title: 'Regelverk för Samordnad identitet och behörighet',
   tagline: 'Federationsplattformens regelverk, villkor och tekniska specifikationer',
   favicon: 'img/favicon.ico',
 
@@ -34,16 +34,71 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          routeBasePath: '/',
-          sidebarPath: './sidebars.js',
-          // No editUrl — hides "Edit this page" for public-facing site
+        docs: false,
+        blog: {
+          path: 'changelog',
+          routeBasePath: 'changelog',
+          blogTitle: 'Ändringslogg',
+          blogSidebarTitle: 'Alla ändringar',
+          showReadingTime: false,
         },
-        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'info',
+        path: 'docs/info',
+        routeBasePath: '/',
+        sidebarPath: './sidebars-info.js',
+        editUrl: undefined,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'villkorsbilagor',
+        path: 'docs/villkorsbilagor',
+        routeBasePath: 'villkorsbilagor',
+        sidebarPath: './sidebars-villkorsbilagor.js',
+        editUrl: undefined,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'avtalsmallar',
+        path: 'docs/avtalsmallar',
+        routeBasePath: 'avtalsmallar',
+        sidebarPath: './sidebars-avtalsmallar.js',
+        editUrl: undefined,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'policyer',
+        path: 'docs/policyer',
+        routeBasePath: 'policyer',
+        sidebarPath: './sidebars-policyer.js',
+        editUrl: undefined,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'styrning',
+        path: 'docs/styrning',
+        routeBasePath: 'styrning',
+        sidebarPath: './sidebars-styrning.js',
+        editUrl: undefined,
+      },
     ],
   ],
 
@@ -52,40 +107,83 @@ const config = {
     ({
       // Metadata
       metadata: [
-        { name: 'keywords', content: 'federation, identitet, beh\u00f6righet, regelverk, SIB, Sverige, Digg, Ena' },
-        { name: 'description', content: 'Regelverk f\u00f6r federationsplattformen inom Samordnad identitet och beh\u00f6righet' },
+        { name: 'keywords', content: 'federation, identitet, behörighet, regelverk, SIB, Sverige, Digg, Ena' },
+        { name: 'description', content: 'Regelverk för federationsplattformen inom Samordnad identitet och behörighet' },
       ],
 
       navbar: {
         title: 'SIB Regelverk',
         logo: {
-          alt: 'Samordnad identitet och beh\u00f6righet',
+          alt: 'Samordnad identitet och behörighet',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'omSidebar',
+            docsPluginId: 'info',
             position: 'left',
             label: 'Om SIB',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'regelverkSidebar',
-            position: 'left',
+            type: 'dropdown',
             label: 'Regelverk',
+            position: 'left',
+            items: [
+              {
+                type: 'docSidebar',
+                sidebarId: 'villkorsbilagorSidebar',
+                docsPluginId: 'villkorsbilagor',
+                label: 'Villkorsbilagor',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'avtalsmallarSidebar',
+                docsPluginId: 'avtalsmallar',
+                label: 'Avtalsmallar',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'policyerSidebar',
+                docsPluginId: 'policyer',
+                label: 'Policyer',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'styrningSidebar',
+                docsPluginId: 'styrning',
+                label: 'Styrning',
+              },
+            ],
           },
           {
             type: 'docSidebar',
             sidebarId: 'guiderSidebar',
+            docsPluginId: 'info',
             position: 'left',
             label: 'Guider',
           },
           {
             type: 'docSidebar',
             sidebarId: 'omRegelverketSidebar',
+            docsPluginId: 'info',
             position: 'left',
             label: 'Om regelverket',
+          },
+      {
+        to: '/changelog',
+        label: 'Ändringslogg',
+        position: 'right',
+      },
+          {
+            type: 'docsVersionDropdown',
+            docsPluginId: 'villkorsbilagor',
+            position: 'right',
+          },
+          {
+            type: 'docsVersionDropdown',
+            docsPluginId: 'policyer',
+            position: 'right',
           },
           {
             href: 'https://www.digg.se/digitala-tjanster/samordnad-identitet-och-behorighet',
@@ -107,7 +205,7 @@ const config = {
             title: 'Om',
             items: [
               {
-                label: 'Samordnad identitet och beh\u00f6righet',
+                label: 'Samordnad identitet och behörighet',
                 href: 'https://www.digg.se/digitala-tjanster/samordnad-identitet-och-behorighet',
               },
               {
@@ -126,7 +224,7 @@ const config = {
             ],
           },
           {
-            title: 'K\u00e4llkod',
+            title: 'Källkod',
             items: [
               {
                 label: 'GitHub',
@@ -135,7 +233,7 @@ const config = {
             ],
           },
         ],
-        copyright: 'Samordnad identitet och beh\u00f6righet tillhandah\u00e5lls av <a href="https://www.digg.se" target="_blank" rel="noopener noreferrer">Digg</a> som en del av <a href="https://www.digg.se/digitala-tjanster/ena" target="_blank" rel="noopener noreferrer">Ena \u2013 Sveriges digitala infrastruktur</a>.',
+        copyright: 'Samordnad identitet och behörighet tillhandahålls av <a href="https://www.digg.se" target="_blank" rel="noopener noreferrer">Digg</a> som en del av <a href="https://www.digg.se/digitala-tjanster/ena" target="_blank" rel="noopener noreferrer">Ena \u2013 Sveriges digitala infrastruktur</a>.',
       },
 
       // Support both light and dark mode

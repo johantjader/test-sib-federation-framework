@@ -20,13 +20,12 @@ applies_to:
 
 ---
 
-| Version | 0.2 |
+| | |
+|---|---|
 | Ägs av | Ledningsaktören |
 | Refereras från | ANS-OP-avtal, FM-anslutningsförbindelse |
-|---|---|
-| Datum | [datum] |
-| Ägs av | Ledningsaktören |
-| Refereras från | ANS-OP-avtal, FED-MED-avtal |
+| Träder i kraft | TBD |
+| Beslutsdatum | TBD |
 
 ---
 

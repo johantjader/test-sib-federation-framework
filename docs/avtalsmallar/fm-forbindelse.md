@@ -1,7 +1,7 @@
 ---
 title: "Avtalsmall FM-Förbindelse"
 sidebar_label: "FM-Förbindelse"
-sidebar_position: 2
+sidebar_position: 3
 artifact_id: "fm-forbindelse"
 artifact_type: "avtalsmall"
 version: "0.1"
@@ -22,14 +22,15 @@ applies_to:
 
 ---
 
-| Mallversion | 0.2 |
+| | |
 |---|---|
 | Datum | [datum] |
-| Status | UTKAST |
+| Träder i kraft | TBD |
+| Beslutsdatum | TBD |
 
 ---
 
-*Partsuppgifter, kontextnamn och övriga instansvariabler anges i separat instansblad.*
+*Avtalsmallen innehåller öppna variabler (markerade med hakparenteser) som fylls i vid instansiering.*
 
 ---
 
@@ -47,13 +48,13 @@ applies_to:
 
 **2.1** Detta avtal är en instans av federationsplattformens avtalsmall för anslutning av federationsmedlem (FM-anslutningsförbindelse).
 
-**2.2** Genom detta avtal ansluts Federationsmedlemmen till den federationskontext som anges i instansbladet och underkastar sig federationsplattformens bindande villkorsbilagor.
+**2.2** Genom detta avtal ansluts Federationsmedlemmen till den federationskontext som anges vid instansiering av avtalsmallen och underkastar sig federationsplattformens bindande villkorsbilagor.
 
 **2.3** Avtalet ingås av Anslutningsoperatören i Federationsoperatörens namn och för dennes räkning med stöd av fullmakt enligt separat avtal (ANS-OP) mellan Federationsoperatören och Anslutningsoperatören.
 
 **2.4** Federationsmedlemmens anslutning innebär att Federationsmedlemmen ingår i den rättsliga gemenskap som gäller mellan samtliga federationsmedlemmar inom samma federationskontext och accepterar de interpartsverkningar som uttryckligen följer av Bilaga F.
 
-**2.5** Eventuell pilotstatus eller annan särskild status anges i instansbladet. Sådan status förändrar inte avtalets grundläggande rättsstruktur.
+**2.5** Eventuell pilotstatus eller annan särskild status anges vid instansiering av avtalsmallen. Sådan status förändrar inte avtalets grundläggande rättsstruktur.
 
 ## 3. Definitioner
 
@@ -63,11 +64,11 @@ Bilaga A — Definitioner. Avtalstexten äger tolkningsföreträde vid motstridi
 
 ### 4.1 Federationskontext
 
-Avtalet avser anslutning till den federationskontext som anges i instansbladet.
+Avtalet avser anslutning till den federationskontext som anges vid instansiering av avtalsmallen.
 
 ### 4.2 Syfte och användningsbegränsning
 
-Federationskontextens syfte anges i instansbladet. Federationsmedlemmen bekräftar att anslutningen sker för detta syfte och förbinder sig att inte använda federationsinfrastrukturen för ändamål som saknar koppling till det angivna syftet.
+Federationskontextens syfte anges vid instansiering av avtalsmallen. Federationsmedlemmen bekräftar att anslutningen sker för detta syfte och förbinder sig att inte använda federationsinfrastrukturen för ändamål som saknar koppling till det angivna syftet.
 
 ### 4.3 Roller och registrering
 
@@ -115,7 +116,7 @@ I enlighet med Bilaga F (F.44–F.47).
 
 ## 8. Ansvarsbegränsningar
 
-I enlighet med Bilaga G. Kompletterande pilotvillkor kan anges i instansbladet.
+I enlighet med Bilaga G. Kompletterande pilotvillkor kan anges vid instansiering av avtalsmallen.
 
 ## 9. Personuppgiftsbehandling
 
@@ -139,7 +140,6 @@ Respektive Part är personuppgiftsansvarig för sin behandling inom anslutningsp
 
 | Bilaga | Innehåll |
 |---|---|
-| Instansblad | Parter, kontextnamn, avgränsningar, pilotstatus |
 | Bilaga A | Definitioner |
 | Bilaga C | Krav på federationsmedlemmars komponenter |
 | Bilaga D | Tekniska specifikationer och profiler |
@@ -151,7 +151,7 @@ Respektive Part är personuppgiftsansvarig för sin behandling inom anslutningsp
 
 1. Tvingande lag, förordning och myndighetsbeslut.
 2. Detta avtalsdokument.
-3. Instansbladet.
+3. Det instansierade avtalets kontextspecifika uppgifter.
 4. Bilaga E i fråga om ikraftträdande och ändringsgenomslag.
 5. Övriga bilagor, där specifik reglering går före allmän.
 

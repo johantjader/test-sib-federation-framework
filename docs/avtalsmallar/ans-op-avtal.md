@@ -1,7 +1,7 @@
 ---
 title: "Avtalsmall ANS-OP"
 sidebar_label: "ANS-OP"
-sidebar_position: 1
+sidebar_position: 2
 artifact_id: "ans-op-avtal"
 artifact_type: "avtalsmall"
 version: "0.1"
@@ -22,14 +22,15 @@ applies_to:
 
 ---
 
-| Mallversion | 0.2 |
+| | |
 |---|---|
 | Datum | [datum] |
-| Status | UTKAST |
+| Träder i kraft | TBD |
+| Beslutsdatum | TBD |
 
 ---
 
-*Partsuppgifter, kontextnamn och övriga instansvariabler anges i separat instansblad.*
+*Avtalsmallen innehåller öppna variabler (markerade med hakparenteser) som fylls i vid instansiering.*
 
 ---
 
@@ -51,11 +52,11 @@ Kopplingen mellan federationsplattformen och den aktuella federationskontexten r
 
 ### 2.2 Syfte
 
-Avtalet reglerar villkoren för Anslutningsoperatörens uppdrag inom den federationskontext som anges i instansbladet, inbegripet fullmakt att i Federationsoperatörens namn ingå anslutningsförbindelser med federationsmedlemmar.
+Avtalet reglerar villkoren för Anslutningsoperatörens uppdrag inom den federationskontext som anges vid instansiering av avtalsmallen, inbegripet fullmakt att i Federationsoperatörens namn ingå anslutningsförbindelser med federationsmedlemmar.
 
 ### 2.3 Pilotstatus eller annan särskild status
 
-Eventuell pilotstatus, övergångsvillkor eller annan särskild status anges i instansbladet. Sådan status förändrar inte avtalsmallens grundläggande rättsstruktur om inte detta uttryckligen anges.
+Eventuell pilotstatus, övergångsvillkor eller annan särskild status anges vid instansiering av avtalsmallen. Sådan status förändrar inte avtalsmallens grundläggande rättsstruktur om inte detta uttryckligen anges.
 
 ## 3. Definitioner
 
@@ -65,11 +66,11 @@ Bilaga A — Definitioner. Avtalstexten äger tolkningsföreträde vid motstridi
 
 ### 4.1 Federationskontext
 
-Avtalet avser den federationskontext som anges i instansbladet.
+Avtalet avser den federationskontext som anges vid instansiering av avtalsmallen.
 
 ### 4.2 Kontextspecifika avgränsningar
 
-De kontextspecifika avgränsningarna (målgrupp, syfte, funktionell avgränsning m.m.) anges i instansbladet. Anslutningsoperatören ska tillämpa dessa avgränsningar vid anslutning av federationsmedlemmar.
+De kontextspecifika avgränsningarna (målgrupp, syfte, funktionell avgränsning m.m.) anges vid instansiering av avtalsmallen. Anslutningsoperatören ska tillämpa dessa avgränsningar vid anslutning av federationsmedlemmar.
 
 ### 4.3 Förhållande till tjänsteavtal
 
@@ -97,7 +98,7 @@ Avtalet bygger på federationsplattformens villkorsbilagor (se avsnitt 13). Bila
 
 ### 7.1 Efterlevnad
 
-Anslutningsoperatören ska följa de villkorsbilagor och policyer som anges i avsnitt 13 samt de kontextspecifika avgränsningar som anges i instansbladet.
+Anslutningsoperatören ska följa de villkorsbilagor och policyer som anges i avsnitt 13 samt de kontextspecifika avgränsningar som anges vid instansiering av avtalsmallen.
 
 ### 7.2 Anslutning av federationsmedlemmar
 
@@ -105,7 +106,7 @@ Vid anslutning ska Anslutningsoperatören:
 
 a) Genomföra de kontroller som föreskrivs i anslutningspolicyn.
 
-b) Kontrollera att den sökande organisationen ingår i kontextens målgrupp och att dess syfte är förenligt med kontextens ändamål (enligt instansbladet).
+b) Kontrollera att den sökande organisationen ingår i kontextens målgrupp och att dess syfte är förenligt med kontextens ändamål (enligt det instansierade avtalet).
 
 c) I Federationsoperatörens namn och för dennes räkning ingå en standardiserad FM-anslutningsförbindelse med den anslutande organisationen, med tillämpning av federationsplattformens avtalsmall och utan avvikelse från kärnvillkoren.
 
@@ -143,7 +144,7 @@ På begäran redovisa anslutna federationsmedlemmar, genomförda kontroller och 
 
 a) Använda den av federationsplattformen fastställda avtalsmallen för FM-anslutningsförbindelse.
 
-b) Fylla i partsuppgifter, kontaktpunkter, kontextuppgifter och andra uttryckligt öppna variabler i instansblad.
+b) Fylla i partsuppgifter, kontaktpunkter, kontextuppgifter och andra uttryckligt öppna variabler vid instansiering av avtalsmallen.
 
 c) Genomföra sådana administrativa åtgärder som är nödvändiga för avtalsingående, registrering, ändring, suspension och avregistrering i enlighet med federationsplattformens bindande artefakter.
 
@@ -163,7 +164,7 @@ d) Överlåta eller vidaredelegera fullmakten.
 
 ## 9. Ansvarsbegränsningar
 
-I enlighet med Bilaga G. Kompletterande pilotvillkor kan anges i instansbladet.
+I enlighet med Bilaga G. Kompletterande pilotvillkor kan anges vid instansiering av avtalsmallen.
 
 ## 10. Personuppgiftsbehandling
 
@@ -185,11 +186,10 @@ Respektive Part är personuppgiftsansvarig för sin behandling inom anslutningsp
 
 ## 13. Avtalsdokument och tolkningsordning
 
-Avtalet består av detta dokument, instansbladet och följande villkorsbilagor:
+Avtalet består av detta dokument och följande villkorsbilagor:
 
 | Bilaga | Innehåll |
 |---|---|
-| Instansblad | Parter, kontextnamn, avgränsningar, pilotstatus |
 | Bilaga A | Definitioner |
 | Bilaga B | Krav på federationsinfrastrukturtjänster |
 | Bilaga C | Krav på federationsmedlemmars komponenter |
@@ -202,7 +202,7 @@ Avtalet består av detta dokument, instansbladet och följande villkorsbilagor:
 
 1. Tvingande lag, förordning och myndighetsbeslut.
 2. Detta avtalsdokument.
-3. Instansbladet.
+3. Det instansierade avtalets kontextspecifika uppgifter.
 4. Bilaga E i fråga om ikraftträdande och ändringsgenomslag.
 5. Övriga bilagor, där specifik reglering går före allmän.
 
