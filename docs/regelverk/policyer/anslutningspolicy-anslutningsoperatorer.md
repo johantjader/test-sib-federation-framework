@@ -36,7 +36,7 @@ applies_to:
 
 Denna policy beskriver krav och kontroller vid godkännande av anslutningsoperatör inom en federationskontext. Policyn reglerar den organisatoriska, tekniska och avtalsmässiga prövning som krävs innan en organisation kan verka som anslutningsoperatör.
 
-Denna policy operationaliserar krav B.1.01–B.1.07 i [Bilaga B](/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster).
+Denna policy operationaliserar krav B.1.01–B.1.07 i [Bilaga B](/regelverk/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster).
 
 ## 2. Tillämpningsområde
 

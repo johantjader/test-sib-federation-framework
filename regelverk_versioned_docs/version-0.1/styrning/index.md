@@ -1,7 +1,7 @@
 ---
 title: "Styrning"
-sidebar_label: "Översikt"
-sidebar_position: 0
+sidebar_label: "Styrning"
+sidebar_position: 4
 description: "Federationsplattformens styrningsdokument anger formella kriterier för strategiska vägval."
 ---
 
@@ -11,4 +11,4 @@ Styrningsdokumenten anger formella kriterier för strategiska vägval inom feder
 
 Följande styrningsdokument ingår:
 
-- [**Etablering av federationskontexter**](/styrning/etablering-federationskontexter) — principer och kriterier för när och hur nya kontexter får etableras.
+- [**Etablering av federationskontexter**](/regelverk/styrning/etablering-federationskontexter) — principer och kriterier för när och hur nya kontexter får etableras.

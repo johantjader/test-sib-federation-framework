@@ -71,7 +71,7 @@ Etablering av en ny federationskontext förutsätter att:
 
 **4.4** Minst en anslutningsoperatör har godkänts eller bedöms kunna godkännas inom rimlig tid.
 
-**4.5** Teknisk infrastruktur (tillitsankartjänst, uppslags- och verifieringstjänst) kan tillhandahållas i enlighet med [Bilaga B](/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster).
+**4.5** Teknisk infrastruktur (tillitsankartjänst, uppslags- och verifieringstjänst) kan tillhandahållas i enlighet med [Bilaga B](/regelverk/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster).
 
 ## 5. Förhållande till den gemensamma federationsplattformen
 
@@ -87,7 +87,7 @@ c) uttryckligt tillåtna kontextspecifika avgränsningar.
 
 ### 5.2 Begränsningar
 
-Kontextspecifika beslut får inte ändra definitioner i [Bilaga A](/villkorsbilagor/bilaga-a-definitioner), sänka tillitsnivån under den baslinje som federationsplattformen anger, eller strida mot villkorsbilagorna (Bilaga E, 2.3).
+Kontextspecifika beslut får inte ändra definitioner i [Bilaga A](/regelverk/villkorsbilagor/bilaga-a-definitioner), sänka tillitsnivån under den baslinje som federationsplattformen anger, eller strida mot villkorsbilagorna (Bilaga E, 2.3).
 
 ### 5.3 Transitiv tillit mellan kontexter
 

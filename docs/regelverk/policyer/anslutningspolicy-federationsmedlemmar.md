@@ -34,7 +34,7 @@ applies_to:
 
 Denna policy beskriver krav och arbetsmetoder för verifiering av juridisk organisationsidentitet vid anslutning av federationsmedlem till en federationskontext. Policyn reglerar organisationsidentitet och delegation. Teknisk verifiering av komponenter och metadata regleras i registreringspolicyn.
 
-Denna policy operationaliserar krav B.1.20–B.1.25 i [Bilaga B](/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster), krav F.01–F.04 i [Bilaga F](/villkorsbilagor/bilaga-f-federationsregler) samt krav Ena O.1, O.5, O.15 i kravkatalogen.
+Denna policy operationaliserar krav B.1.20–B.1.25 i [Bilaga B](/regelverk/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster), krav F.01–F.04 i [Bilaga F](/regelverk/villkorsbilagor/bilaga-f-federationsregler) samt krav Ena O.1, O.5, O.15 i kravkatalogen.
 
 ## 2. Vad andra parter kan förutsätta
 
@@ -48,7 +48,7 @@ c) verifiering av behörig företrädare,
 
 d) registrering av tekniska och administrativa kontaktpersoner.
 
-Övriga federationsmedlemmar inom samma federationskontext kan förlita sig på att dessa kontroller har genomförts. Den transitiva tilliten bygger på att samtliga medlemmar är bundna av samma [federationsregler (Bilaga F)](/villkorsbilagor/bilaga-f-federationsregler).
+Övriga federationsmedlemmar inom samma federationskontext kan förlita sig på att dessa kontroller har genomförts. Den transitiva tilliten bygger på att samtliga medlemmar är bundna av samma [federationsregler (Bilaga F)](/regelverk/villkorsbilagor/bilaga-f-federationsregler).
 
 ## 3. Omfattning och avgränsning
 
@@ -76,7 +76,7 @@ Policyn reglerar **inte**:
 
 ## 5. Definitioner
 
-Termer i denna policy har den betydelse som anges i [Bilaga A — Definitioner](/villkorsbilagor/bilaga-a-definitioner). Avtalstexten äger tolkningsföreträde vid motstridighet.
+Termer i denna policy har den betydelse som anges i [Bilaga A — Definitioner](/regelverk/villkorsbilagor/bilaga-a-definitioner). Avtalstexten äger tolkningsföreträde vid motstridighet.
 
 ## 6. Organisationsverifiering vid anslutning
 

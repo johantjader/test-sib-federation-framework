@@ -26,15 +26,15 @@ När en anslutningsoperatör ansluter nya medlemmar, agerar de med formell **ful
 För att bli godkänd som anslutningsoperatör finns ett antal grundkrav uppställda i regelverket. Här är en övergripande sammanfattning:
 
 ### 1. Organisatoriska krav
-De exakta organisatoriska kraven finns definierade i [Bilaga B, avsnitt B.1.01–B.1.07](/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster). I korthet innebär det att er organisation måste:
+De exakta organisatoriska kraven finns definierade i [Bilaga B, avsnitt B.1.01–B.1.07](/regelverk/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster). I korthet innebär det att er organisation måste:
 * Vara en svensk juridisk person med aktiv status.
 * Ha anmält behöriga företrädare och tekniska/administrativa kontaktpersoner.
 * Tillhandahålla en bemannad kontaktväg för incidenthantering.
 * Bedriva ett systematiskt och dokumenterat informationssäkerhetsarbete (inkl. rutiner för incident- och nyckelhantering).
 
 ### 2. Tekniska krav
-De detaljerade tekniska kraven finns definierade i [Bilaga B, avsnitt B.1.10–B.1.14](/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster). I korthet måste ni:
-* Driva en anslutningstjänst som publicerar och hanterar metadata strikt enligt [Bilaga D — Tekniska specifikationer](/villkorsbilagor/bilaga-d-tekniska-specifikationer).
+De detaljerade tekniska kraven finns definierade i [Bilaga B, avsnitt B.1.10–B.1.14](/regelverk/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster). I korthet måste ni:
+* Driva en anslutningstjänst som publicerar och hanterar metadata strikt enligt [Bilaga D — Tekniska specifikationer](/regelverk/villkorsbilagor/bilaga-d-tekniska-specifikationer).
 * Upprätthålla mycket hög tillgänglighet för uppslags- och verifieringstjänster.
 * Hantera kryptografiska nycklar säkert (kontrollerad rotation och förmåga till nödåterkallelse).
 
@@ -60,7 +60,7 @@ Vid anslutning är det ert ansvar att noggrant identifiera och kontrollera den s
 
 ### Registrering av tekniska system
 Ni säkerställer att de tekniska IT-system som medlemmarna vill ansluta uppfyller kraven.
-* Ni verifierar att de uppfyller tillämpliga delar av [Bilaga C — Krav på medlemskomponenter](/villkorsbilagor/bilaga-c-krav-medlemskomponenter).
+* Ni verifierar att de uppfyller tillämpliga delar av [Bilaga C — Krav på medlemskomponenter](/regelverk/villkorsbilagor/bilaga-c-krav-medlemskomponenter).
 * Systemen domänkontrolleras och får korrekt metadata. *Den exakta flödesbeskrivningen utfärdas i den kommande **Registreringspolicyn**.*
 
 ### Förvaltning

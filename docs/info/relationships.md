@@ -30,7 +30,7 @@ Ingen skriftlig del står för sig själv. Bilagor införlivas via avtalen, och 
 
 ### Avtalsmallar bygger på Villkorsbilagor
 
-För att undvika att laglig text dubbleras, pekar avtalen in [Villkorsbilagorna (A–G)](/villkorsbilagor/bilaga-a-definitioner) per referens.
+För att undvika att laglig text dubbleras, pekar avtalen in [Villkorsbilagorna (A–G)](/regelverk/villkorsbilagor/bilaga-a-definitioner) per referens.
 
 * **FED-OP-avtal** (Mellan Ledningsaktör och Federationsoperatör): Inkorporerar Bilaga A, B, D, E, G.
 * **ANS-OP-avtal** (Mellan Federationsoperatör och Anslutningsoperatör): Inkorporerar Bilaga A, B, C, D, E, F, G.

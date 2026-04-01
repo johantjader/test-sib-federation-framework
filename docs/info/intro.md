@@ -29,7 +29,7 @@ Regelverket består av fyra lager med skilda funktioner:
 
 ## Så hittar du rätt
 
-Repot är organiserat efter innehållets karaktär. Under **Regelverk** finns det normativa materialet: avtalsmallar och villkorsbilagor som uttrycker faktiska skyldigheter. Under **Guider** finns informativa texter som förklarar och vägleder utan att skapa egna krav. [Bilaga A — Definitioner](/villkorsbilagor/bilaga-a-definitioner) är en bra startpunkt för att förstå begreppen i regelverket.
+Repot är organiserat efter innehållets karaktär. Under **Regelverk** finns det normativa materialet: avtalsmallar och villkorsbilagor som uttrycker faktiska skyldigheter. Under **Guider** finns informativa texter som förklarar och vägleder utan att skapa egna krav. [Bilaga A — Definitioner](/regelverk/villkorsbilagor/bilaga-a-definitioner) är en bra startpunkt för att förstå begreppen i regelverket.
 
 ### Jag vill bli anslutningsoperatör
 

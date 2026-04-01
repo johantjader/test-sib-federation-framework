@@ -36,7 +36,7 @@ applies_to:
 
 Denna policy beskriver hur tekniska komponenters metadata registreras, ändras och avregistreras i federationsinfrastrukturen. Policyn reglerar den tekniska registreringsprocessen. Organisatorisk verifiering av federationsmedlemmen regleras i anslutningspolicyn för federationsmedlemmar.
 
-Denna policy operationaliserar krav B.1.22–B.1.26 i [Bilaga B](/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster) och krav C.0.01–C.0.10 i [Bilaga C](/villkorsbilagor/bilaga-c-krav-medlemskomponenter).
+Denna policy operationaliserar krav B.1.22–B.1.26 i [Bilaga B](/regelverk/villkorsbilagor/bilaga-b-krav-infrastrukturtjanster) och krav C.0.01–C.0.10 i [Bilaga C](/regelverk/villkorsbilagor/bilaga-c-krav-medlemskomponenter).
 
 ## 2. Tillämpningsområde
 
@@ -46,7 +46,7 @@ Policyn tillämpas av anslutningsoperatören vid registrering, ändring och avre
 
 [ATT UTVECKLA] — Beskriver stegen vid registrering av en ny teknisk komponent. Inkluderar:
 
-- kontroll av metadata mot tillämpliga krav i [Bilaga C](/villkorsbilagor/bilaga-c-krav-medlemskomponenter) (B.1.22),
+- kontroll av metadata mot tillämpliga krav i [Bilaga C](/regelverk/villkorsbilagor/bilaga-c-krav-medlemskomponenter) (B.1.22),
 - verifiering av organisationskoppling (B.1.23, C.0.03),
 - domänkontroll (B.1.24, C.0.05),
 - tilldelning av registreringspolicy-URI (B.1.25, C.0.07),

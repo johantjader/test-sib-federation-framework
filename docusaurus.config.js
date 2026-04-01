@@ -63,41 +63,23 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'villkorsbilagor',
-        path: 'docs/villkorsbilagor',
-        routeBasePath: 'villkorsbilagor',
-        sidebarPath: './sidebars-villkorsbilagor.js',
+        id: 'regelverk',
+        path: 'docs/regelverk',
+        routeBasePath: 'regelverk',
+        sidebarPath: './sidebars-regelverk.js',
         editUrl: undefined,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'avtalsmallar',
-        path: 'docs/avtalsmallar',
-        routeBasePath: 'avtalsmallar',
-        sidebarPath: './sidebars-avtalsmallar.js',
-        editUrl: undefined,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'policyer',
-        path: 'docs/policyer',
-        routeBasePath: 'policyer',
-        sidebarPath: './sidebars-policyer.js',
-        editUrl: undefined,
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'styrning',
-        path: 'docs/styrning',
-        routeBasePath: 'styrning',
-        sidebarPath: './sidebars-styrning.js',
-        editUrl: undefined,
+        lastVersion: '0.2',
+        versions: {
+          current: {
+            label: 'Arbetsversion',
+          },
+          '0.2': {
+            label: 'Regelverk 0.2',
+          },
+          '0.1': {
+            label: 'Regelverk 0.1',
+          },
+        },
       },
     ],
   ],
@@ -126,35 +108,11 @@ const config = {
             label: 'Om SIB',
           },
           {
-            type: 'dropdown',
-            label: 'Regelverk',
+            type: 'docSidebar',
+            sidebarId: 'regelverkSidebar',
+            docsPluginId: 'regelverk',
             position: 'left',
-            items: [
-              {
-                type: 'docSidebar',
-                sidebarId: 'villkorsbilagorSidebar',
-                docsPluginId: 'villkorsbilagor',
-                label: 'Villkorsbilagor',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'avtalsmallarSidebar',
-                docsPluginId: 'avtalsmallar',
-                label: 'Avtalsmallar',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'policyerSidebar',
-                docsPluginId: 'policyer',
-                label: 'Policyer',
-              },
-              {
-                type: 'docSidebar',
-                sidebarId: 'styrningSidebar',
-                docsPluginId: 'styrning',
-                label: 'Styrning',
-              },
-            ],
+            label: 'Regelverk',
           },
           {
             type: 'docSidebar',
@@ -177,12 +135,7 @@ const config = {
       },
           {
             type: 'docsVersionDropdown',
-            docsPluginId: 'villkorsbilagor',
-            position: 'right',
-          },
-          {
-            type: 'docsVersionDropdown',
-            docsPluginId: 'policyer',
+            docsPluginId: 'regelverk',
             position: 'right',
           },
           {
