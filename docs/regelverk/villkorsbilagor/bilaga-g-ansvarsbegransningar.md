@@ -5,7 +5,7 @@ sidebar_position: 7
 artifact_id: "bilaga-g"
 artifact_type: "villkorsbilaga"
 version: "0.1"
-normative_status: "UTKAST"
+normative_status: "Trigger"
 description: "Villkorsbilaga \u00b7 Status: UTKAST \u00b7 Version: 0.1"
 applies_to:
   - FED-OP

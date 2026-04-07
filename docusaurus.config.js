@@ -93,6 +93,14 @@ const config = {
         { name: 'description', content: 'Regelverk för federationsplattformen inom Samordnad identitet och behörighet' },
       ],
 
+      announcementBar: {
+        id: 'demo_banner',
+        content: '⚠️ <strong>DEMOVERSION</strong> — Detta är en klickbar prototyp, inte ett officiellt regelverk. <a href="/test-sib-federation-framework/demo">Läs mer →</a>',
+        backgroundColor: '#ff9800',
+        textColor: '#000',
+        isCloseable: false,
+      },
+
       navbar: {
         title: 'SIB Regelverk',
         logo: {
