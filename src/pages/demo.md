@@ -33,7 +33,3 @@ Prototypen innehåller exempelinnehåll inom följande områden:
 - ❌ Ett beslutsdokument eller ett formellt antaget regelverk
 - ❌ En komplett eller slutgiltig version av innehållet
 - ❌ En källa att referera till i formella sammanhang
-
-## Kontakt och återkoppling
-
-Har du synpunkter på struktur, navigation eller innehåll? Vi tar gärna emot återkoppling via projektets [GitHub-repo](https://github.com/johantjader/test-sib-federation-framework) eller genom att kontakta projektgruppen direkt.
